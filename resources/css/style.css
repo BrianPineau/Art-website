@@ -1,0 +1,155 @@
+/* Universal styles */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-size: 16px;
+    max-width: 1080px;
+    margin: 10px;
+    background-color: #f3f3f3;
+}
+
+/* header section */
+
+header {
+    position: fixed;
+    z-index: 10000;
+    max-width: 1080px;
+    min-width: 100%;
+    background-color: rgb(57, 103, 156);
+}
+
+header .links {
+   
+   float: right;
+}
+
+/* jumbotron section */
+.main-banner {
+    margin: 0 auto;
+    width: 960px;
+    height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-banner .imgban {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
+}
+
+.main-banner #imgban3 {
+   background-image: url(../pictures/banneroo.jpg);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-banner #imgban2 {
+   background-image: url(../pictures/bannerll.jpg);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-banner #imgban1 {
+   background-image: url(../pictures/bannertt.jpg);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgbanbtn {
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  top: 180px;
+  z-index: 2000;
+  opacity: 0.4;
+  cursor: pointer
+}
+
+.imgbanbtn:hover {
+opacity: 0.9;
+}
+
+.imgbanbtn-prev {
+  left: 5px;
+  background-image: url(../pictures/ArrowIconLeft.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imgbanbtn-next {
+  right: 5px;
+  background-image: url(../pictures/ArrowIconRight1.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-banner .imgban-box h2 {
+    font-family: arial;
+    font-size: 60px;
+    color: #fff;
+}
+
+.main-banner .imgban-box p {
+    padding-top: 6px;
+    font-family: arial;
+    font-size: 16px;
+    color: #fff;
+}
+
+.main-banner #imgban3 .imgban-box {
+    padding-top: 220px;
+    padding-left: 100px;
+}
+
+.main-banner #imgban2 .imgban-box {
+    padding-top: 220px;
+    padding-right: 100px;
+    float: right;
+    text-align: right;
+}
+
+.main-banner #imgban1 .imgban-box {
+    padding-top: 70px;
+    padding-left: 100px;
+}
+
+/* Image Section */
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* tre bon */
